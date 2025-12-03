@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x2 Flex Layout</title>
+    <style>
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            height: 400px;
+        }
+
+        .flex-item {
+            flex: 1 1 calc(50% - 7.5px);
+            padding: 40px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            background: red;
+        }
+
+        .box2 {
+            background: seagreen;
+        }
+
+        .box3 {
+            background: lightblue;
+        }
+
+        .box4 {
+            background: springgreen;
+        }
+
+        .box5 {
+            background: yellow;
+        }
+
+        .box6 {
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>3x2 Flexbox Layout</h2>
+        <div class="flex-container">
+            <div class="flex-item box1">Box 1</div>
+            <div class="flex-item box2">Box 2</div>
+            <div class="flex-item box3">Box 3</div>
+            <div class="flex-item box4">Box 4</div>
+            <div class="flex-item box5">Box 5</div>
+            <div class="flex-item box6">Box 6</div>
+        </div>
+    </div>
+</body>
+
+</html>

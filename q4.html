@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="myParagraph">0</p>
+    <button id="hideButton">Increase</button>
+    <button id="hideButton1">Decrease</button>
+    <script>
+
+        const para = document.getElementById("myParagraph");
+        const btn = document.getElementById("hideButton");
+        const btn1 = document.getElementById("hideButton1");
+
+
+        let count = 0;
+
+        btn.addEventListener('click', function () {
+            count++;
+            para.textContent = count;
+        })
+
+        btn1.addEventListener('click', function () {
+            count--;
+            para.textContent = count;
+        })
+
+    </script>
+</body>
+
+</html>
